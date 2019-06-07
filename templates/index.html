@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Template is working</title>
+    </head>
+    <body>
+            <h1>Welcome to the Homepage</h1>
+            {{ name }}
+            <form action="{% url 'count' %}">
+                <textarea name='fulltextarea' style='margin: 0px; width: 721px; height: 93px;'></textarea><br>
+                <!-- <input type="checkbox" name="removepunc"> Remove Punctuations<br> -->
+                <button type='submit'> Count</button>  
+                <a href="{% url 'about' %}"> Go to about page </a>
+            
+            </form>
+    </body>
+</html>

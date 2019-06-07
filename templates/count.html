@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Template is working</title>
+    </head>
+    <body>
+            <h1>Counted</h1>
+            <br>
+            <a href="http://127.0.0.1:8000/index/"> Go to homepage </a>
+            <h2>Your Text</h2>
+            {{fulltextarea}}
+            <br><br>
+            <h2>Word Counted</h2>
+           Total words are = {{words}}
+           <br><br>
+           {% for word,value in worddictionary %}
+           {{word}} = {{value}} 
+           <br>
+           {% endfor %}
+            <!-- <form action="{% url 'count' %}">
+                <textarea name='text' style='margin: 0px; width: 721px; height: 93px;'></textarea><br>
+                <input type="checkbox" name="removepunc"> Remove Punctuations<br>
+                <button type='submit'> count</button>    
+            
+            </form> -->
+    </body>
+</html>
